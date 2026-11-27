@@ -29,6 +29,7 @@ API-visible strings kept unchanged:
 - [Running the samples](#running-the-samples)
 - [Public API](#public-api)
 - [Version information](#version-information)
+- [Release notes](#release-notes)
 - [Compatibility notes](#compatibility-notes)
 - [License and credits](#license-and-credits)
 
@@ -75,6 +76,7 @@ dll\fastini.dll  rebuilt FastINI REXX DLL
 
 | Path | Purpose |
 |---|---|
+| `RELEASE-NOTES.txt` | Release summary for package version 98.149 |
 | `Makefile.wat` | Open Watcom 2 `wmake` build file; run from the project root |
 | `compile_wat.cmd` | Clean full build; writes `compile.log` |
 | `src\fastini.c` | Original C source, with only the trailing EOF marker removed |
@@ -211,6 +213,14 @@ The Watcom linker directives preserve those observed ordinals.
 - DLL BLDLEVEL signature: `@#OS2World:98.149#@FastINI 98.149 (Open Watcom 2)`
 - API version string: `98.148 ...` (unchanged)
 - REXX header version: `98.147` (unchanged)
+
+---
+
+## Release notes
+
+`RELEASE-NOTES.txt` contains the 98.149 package summary, build instructions,
+preserved exports and API strings, verification results and compatibility
+notes.
 
 ---
 

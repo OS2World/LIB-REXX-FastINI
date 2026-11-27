@@ -1,0 +1,67 @@
+FastINI 98.149
+==============
+
+Open Watcom 2 rebuild of the FastINI REXX DLL for ArcaOS and OS/2 Warp 4.52.
+
+Package version: 98.149
+Build commit:    5f603ad
+License:         GNU GPL v2
+
+The original REXX API, exported entry-point names, documented behaviour,
+copyright/GPL notices and API-visible version strings are preserved.
+
+Build
+-----
+From the project root on OS/2:
+
+    compile_wat.cmd
+
+Requirements: Open Watcom 2.0.1 (C:\WATCOM) and OS/2 Toolkit 4.5
+headers/libraries (C:\OS2TK45).
+
+BLDLEVEL signature
+------------------
+    @#OS2World:98.149#@FastINI 98.149 (Open Watcom 2)
+
+BLDLEVEL.EXE displays revision 98.149 and file version 98.149.
+
+Exports preserved
+-----------------
+    1  FastIniStart
+    2  FastIniVersion
+    3  FastIniEnd
+
+API-visible versions preserved
+------------------------------
+    FastIniVersion:       98.148
+    HEADER_FASTINI_XH:    98.147
+
+These strings are intentionally unchanged: 98.149 identifies this rebuilt
+package, not the REXX-visible API version.
+
+Verification on ArcaOS
+----------------------
+- Clean full build with 0 warnings and 0 errors.
+- BLDLEVEL signature checked on dll\fastini.dll.
+- Exports and ordinals verified with lx_export.py.
+- Imports verified against REXX, PMWIN, PMSHAPI, NLS and DOSCALLS.
+- example.cmd FAST and SLOW completed successfully.
+- The expanded FASTINI.XH wrapper sample completed in FAST and SLOW modes.
+- C:\POPUPLOG.OS2 was unchanged by the tests.
+
+Compatibility notes
+-------------------
+- 32-bit OS/2 DLL; this is not a Win32 or 16-bit build.
+- h\RexxDll.h is a reconstruction of the lost IBM support header, derived
+  from os2tk45\h\rexxsaa.h and the original DLL's behaviour.
+- Error text keeps the original shape:
+  Failure at <source>(<line>): <message>
+- This is a functional rebuild, not a byte-for-byte reproduction of the
+  1998 LINK386 binary.
+
+License and credits
+-------------------
+Released as Open Source Software under the GNU GPL v2. Original notices are
+preserved in COPYING.TXT and doc\COPYING.header.txt.
+
+Original author: Dennis Bareis
