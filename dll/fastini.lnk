@@ -1,0 +1,13 @@
+system os2v2_dll
+name dll\fastini.dll
+option map=dll\fastini.map
+option description '@#OS2World:98.149#@FastINI 98.149 (Open Watcom 2)'
+option manyautodata
+option stack=32768
+export FastIniStart.1
+export FastIniVersion.2
+export FastIniEnd.3
+file dll\fastini.obj
+library clib3r.lib
+library os2386.lib
+library rexx.lib

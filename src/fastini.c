@@ -167,5 +167,3 @@ REX_DECLARE_REXX_ENTRY_POINT(FastIniEnd)
    /*--- Thats all Folks ----------------------------------------------------*/
    REX_RETURN_TO_CMD();
 }
-
-
